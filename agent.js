@@ -117,7 +117,7 @@ const tools = [
     function: {
       name: "approve_pr",
       description:
-        "Approve the pull request when no critical or medium issues are found.",
+        "Approve the pull request when no critical or medium issues are found. If AUTO_MERGE_ON_APPROVAL=true, this also attempts to merge the PR after approval.",
       parameters: {
         type: "object",
         properties: {
