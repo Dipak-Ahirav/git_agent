@@ -85,6 +85,12 @@ $rng = New-Object byte[] 32
 ($rng | ForEach-Object { $_.ToString("x2") }) -join ""
 ```
 
+Or generate the same kind of hex secret with Node.js:
+
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
+
 Copy the output into:
 
 ```env
